@@ -1,0 +1,132 @@
+<html>
+<head><title>Login Form</title></head>
+<link rel="stylesheet" href="css/style.css" type="text/css" >
+
+<!-- sare link yahan dalnaaa ... <a href "" >is ke undar link dalne se link hota hai agla page , next page mai bhi vahi livk dalne hoti hai viseversa home par click kiya toh home khule esa... icons nhi dale tune mana kiya tha... self mai hai.. kuch haad tak toh zyada make over na kar dena... aur koi kaam ho toh bata diyo aur koi doubt ho toh milkar bata dungi... abhi baut time hai ... responsive nhi banaya..... banana tha kya...? -->
+
+
+<body>
+<div id="wholepg">
+<div id="header">
+	<h1>Legend !</h1>	
+		<ul>
+			<a href=""><li>HOME</li></a>
+			<a href=""><li>PAGES</li></a>
+			<a href=""><li>LINK TEXT</li></a>
+			<a href=""><li>GALLERY</li></a>
+			<a href=""><li>CONTACTS</li></a>
+		</ul>
+	
+</div><!-- end of header -->
+<div id="showcase"><!-- 
+<h2>#1: Sign in/up Form</h2> -->
+	
+<div class="container" id="container"> <!-- signup click kiya toh class container right panel activate hoga  -->
+	<!-- yahan se div khtam hone tak signup k liye hai  -->
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div><!-- yaha tak --><!-- end of signup form container  -->
+	<!-- yaha se div khatam hone tak sign-in k liye hai -->
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div><!-- yahan tak  --><!--form-container sign-in-container  -->
+
+
+	<div class="overlay-container"> <!-- dusra container -->
+		<div class="overlay"> <!-- slide hone wala  -->
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div><!--end of overlay-panel overlay-left -->
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div><!-- end of overlay-panel overlay-right -->
+		</div><!--end of overlay  -->
+	</div><!-- end of overlay-container -->
+</div><!--end of container  -->
+</div><!-- end of showcase -->
+
+<div id="gallery">
+	<hr><h2>Indonectetus facilis</h2><hr id="sec">
+	<div id="secpart">
+	<div>
+		<img src="images/pic08.jpg">
+		<h5>Image Name or Title</h5><br>
+		<p>Some tags or text goes here.</p> <!-- aur text add kar sakte  -->
+
+	</div>
+	<div>
+		<img src="images/pic09.jpg">
+		<h5>Image Name or Title</h5><br>
+		<p>Some tags or text goes here.</p>
+
+	</div>
+	<div>
+		<img src="images/pic01.jpg">
+		<h5>Image Name or Title</h5><br>
+		<p>Some tags or text goes here.</p>
+
+	</div>
+	<div>
+		<img src="images/pic07.jpg">
+		<h5>Image Name or Title</h5><br>
+		<p>Some tags or text goes here.</p>
+
+	</div>
+	<div>
+		<img src="images/pic06.jpg">
+		<h5>Image Name or Title</h5><br>
+		<p>Some tags or text goes here.</p>
+
+	</div>
+	<div>
+		<img src="images/pic02.jpg">
+		<h5>Image Name or Title</h5><br>
+		<p>Some tags or text goes here.</p>
+
+	</div>
+</div><!--end if secpart-->
+</div><!-- end of gallery -->
+
+
+<div id="footer">
+		<h5>Copyright &copy; 2020 - All Rights Reserved</h5>
+		<h6>Template by Aswini Rathod</h6>
+	</div><!--end of footer-->
+
+</div><!-- end of wholepg -->
+
+<script>
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+
+
+</script>
+
+</body>
+</html>
